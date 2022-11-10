@@ -18,6 +18,7 @@ class CircleTest {
         assertEquals(expected,actual,"Expected:\n"+expected+"\nActual:\n"+actual);
         // check if constructor clones location
         p.setX(p.getX()+5);
+        //expected = "Circle/loc=("+(x+5)+","+y+"),radius="+radius;
         actual = c.toString();
         String message = "Expected:\n"+expected+"\nActual:\n"+actual+"\nMake sure you return a copy of the object!";
         assertEquals(expected,actual,message);
